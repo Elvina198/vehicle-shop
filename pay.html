@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./pay.css">
+    <title>Pay </title>
+    </head>
+    <header>
+        <div class="logo">
+            <h1>DRIVE <span>WISE</span></h1>
+             </div>
+                <div class="nav-link">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="buy.html">BUY CARS</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">ABOUT US</a>
+                        </li>
+                    </ul>
+                </div>
+            
+    </header>
+    <body>
+        <main>
+
+         <form action="" method="POST" id="payment-form">
+             <label for="name">Name on card:</label>
+             <input type="text" id="name" name="name" required>
+ 
+             <label for="card-number">Card number</label>
+             <input type="number" id="card-number" name="card-number" pattern="[0-9]{13,16}" required>
+ 
+             <label for="cvc">CVC:</label>
+             <input type="text" id="cvc" name="cvc" pattern="[0-9]{3-4}" required>
+             
+             <label form="expiration-date">Espiration Date:</label>
+             <input type="text" id="expiration-date" name="expiration-date" placeholder="MM / YY" required>
+ 
+             <button type="submit" id="pay-button">Pay</button>
+         </form>
+ 
+         <div id="success-message" style="display: none;">
+             <p>
+                 Thank you for your payment.
+             </p>
+         </div>
+         <div id="error-message" style="display: none;">
+            <p>
+                Please fill out all fields correctly
+            </p>
+        </div>
+ 
+     </main>
+ <footer>
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <div class="logo">
+                    <h1>DRIVE <span>WISE</span></h1>
+                </div>
+                <div class="social">
+                    <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="twitter"><i class="fa-brands fa-x-twitter"></i> </a>
+                        <a href="instagram"><i class="fa-brands fa-instagram"></i> </a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="index.html">Home</a>
+                <a href="buy.html">Buy Cars</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="privacy">Privacy</a>
+                <a href="refund">Refund Policy</a>
+                <a href="cookie">Cookie Policy</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>123 Main .St</p>
+                <p>Prishtina, Kosovo 1000</p>
+                <p>Email:<a href="email">drive.wise@gmail.com</a></p>
+                <p>Phone: <a href="phone">044-000-000</a></p>
+            </div>
+        </div>
+    </section>
+     <p class="footer-bottom">
+      2024 DRIVE WISE, <i class="fa-regular fa-copyright"></i> All rights reserved to DriveWise 
+     </p>
+ </footer>
+ <script src="pay.js"></script>
+ 
+     
+     
+ </body>
+</html>

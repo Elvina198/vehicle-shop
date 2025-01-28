@@ -1,0 +1,347 @@
+body {
+    background-color: #333;
+}
+
+ h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1 span {
+    color: #0474eb; 
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    bottom: 60%;
+    left: 45%;
+    transform: translate(-50%);
+    text-align: center;
+    color: rgb(5, 35, 104);
+}
+.text-overlay h2 {
+    font-size: 40px;
+    margin-bottom: 0.5em;
+}
+.text-overlay p {
+    font-size: 25px;
+    margin: 0;
+    color: blue;
+}
+.nav-link {
+    margin-top: 40px;
+    background-color:#7d7979 ;
+    padding: 20px 0;
+}
+.nav-link ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-link ul li {
+    display: inline;
+}
+.nav-link ul li a {
+    color: #eee;
+    text-decoration: none;
+    padding: 20px 20px;
+    display:inline-block ;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+   
+}
+.nav-link ul li a:hover {
+    background-color: blue;
+}
+
+.iconsContainer {
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 1.5rem;
+    padding-top: 7rem;
+    padding-bottom: rem;
+
+}
+.iconsContainer .icons {
+    background:#7d7979;
+    display: flex;
+    align-items: center;
+    border: 2px solid ;
+    box-shadow: 0 0 30px ;
+    border-radius: 0.5rem;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.iconsContainer .icons i {
+    background: #ffffff;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.iconsContainer .icons h3 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+.iconsContainer .icons p {
+    color: #000000;
+    font-size: 1.5rem;
+}
+.iconsContainer .icons:hover {
+    background-color: #434040;
+}
+.about-container {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #7d7979;
+    box-shadow: 0 0 20px;
+  }
+  
+  .about-img {
+    flex: 1;
+
+  }
+  
+  .about-img img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .about-text {
+    flex: 1; 
+    padding-left: 20px;
+  }
+  @media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
+  
+    .about-text {
+      padding-left:15%;
+      padding-top: 20px; 
+    }
+
+    .blog-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
+    
+    }
+    .heading{
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        color: rgb(252, 252, 253);
+    }
+  .blog-container .box {
+    flex: 1rem ;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px;
+    background-color: #5f5d5d;
+    
+  }
+  .blog-container .box:hover {
+    background-color: #dcdcde;
+  }
+  .blog-container .box img {
+    width: 100%;
+    height: 300px;
+  }
+  .blog-container .box h3 {
+    font-size: 20px;
+    color: rgb(1, 11, 52);
+  }
+  .blog-container .box span {
+    color: #ffffff;
+  }
+  .blog-container .box p {
+    line-height:25px;
+    color: rgb(1, 11, 52);
+  }
+  .contact {
+    margin-bottom: 200px;
+    margin-top: 100px;
+    
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .contact iframe {
+    flex: 1 1 42rem;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 0 5px;
+    border-radius: 0.5rem;
+  }
+  .contact h3 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #ffffff;
+  }
+ .contact form .box {
+    width: 95%;
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;   
+    margin: 0.7rem;
+    box-shadow: 0 0 20px;
+   
+ }
+
+.contact form .button {
+   background-color: #d8dce6;
+   cursor: pointer;
+   padding: 10px;
+   margin-left: 700px;
+   
+
+}
+.contact form .button:hover {
+    background-color: blue;
+}
+ .contact form textarea {
+    height: 18rem;
+ }
+
+ .footer {
+  margin-top: 200px;
+  background:#171717;
+  color: #000000;
+  border-top: 2px solid #181818;
+  box-shadow: 0 0 20px;
+  border-radius: 5px;
+ 
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap:30px;
+}
+.footer-container .logo {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.footer-container .footer-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+.footer-box h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 80px;
+}
+.social a {
+
+  color:#fff ;
+  margin-left: 30px;
+ 
+}
+.footer-box .logo h1 {
+  font-size: 25px;
+}
+.social a:hover {
+color: #0474eb;
+}
+.footer-box a {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.footer-box p {
+  color: #fff;
+  font-size: 15px;
+}
+.footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+
+/* No color not anything only some specifics like margin and padding and also a picture of our banking app so they can come on the same 
+/* And primary color 
+
+Modify the button styles to have a different background color and text color on hover.
+Change the border radius to create rounded corners for the buttons.
+Add a box shadow to the buttons when hovered to give them a slight elevation effect.
+Dropdown Styling:
+
+Add a custom style to the select element to change its appearance.
+Customize the border, padding, and font properties to make the dropdown look more visually appealing.
+Change the border color when the dropdown is hovered or in focus.
+Car Image Styling:
+
+Adjust the size of the car images to make them even smaller.
+Add a border around the car images and increase the border radius for a rounded image effect.
+Apply a transition effect on hover to scale the car images up slightly.
+Form Styling:
+
+Customize the appearance of the form elements, such as text inputs and number inputs.
+Change the background color and border color of the form fields on focus and hover.
+Modify the form layout to align the labels and inputs properly.
+Section Styling:
+
+Apply a background color to the different sections to create visual separation between them.
+Add box shadow to the sections to create a card-like effect.
+Header Styling:
+
+Customize the header background color and text color to make it stand out.
+Add padding to the header to create more space between the content and the edge of the header.
+Font Styling:
+
+Change the font size and weight for various elements to create visual hierarchy.
+Customize the font family and apply it to different sections of the page.
+Overall Layout:
+
+Modify the main section to have a centered layout.
+Adjust the flexbox properties to control the spacing between sections.
+Hover Effect:
+
+Implement hover effects on different elements throughout the page, such as buttons and car images.
+Choose a suitable transition to create a smooth effect on hover.
+
+You can experiment with different values and properties to achieve the desired look and feel for the project.*/
